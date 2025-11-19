@@ -1,6 +1,6 @@
 # Welcome to your Convex + Vercel app
 
-This is a [Convex](https://convex.dev/) project created with [`npm create convex`](https://www.npmjs.com/package/create-convex).
+This is a [Convex](https://convex.dev/) project demonstrating how to use Convex with Vercel.
 
 After the initial setup (<2 minutes) you'll have a working full-stack app using:
 
@@ -8,21 +8,13 @@ After the initial setup (<2 minutes) you'll have a working full-stack app using:
 - [React](https://react.dev/) as your frontend (web page interactivity)
 - [Next.js](https://nextjs.org/) for optimized web hosting and page routing
 - [Tailwind](https://tailwindcss.com/) for building great looking accessible UI
+- [Vercel](https://vercel.com/) for hosting and deployment by integrating Convex through the Vercel Marketplace.
 
 ## Get started
 
-If you just cloned this codebase and didn't use `npm create convex`, run:
+Click the "Deploy" button to clone this repo, create a new Vercel project, setup the Convex integration, and provision a new Convex project:
 
-```
-npm install
-npm run dev
-```
-
-If you're reading this README on GitHub and want to use this template, run:
-
-```
-npm create convex@latest -- -t nextjs
-```
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fget-convex%2Fvercel-marketplace-convex&project-name=vercel-with-convex&repository-name=vercel-with-convex&demo-title=Convex%20with%20Vercel&demo-description=A%20minimal%20template%20showcasing%20using%20Convex%20with%20Vercel&demo-url=https%3A%2F%2Fconvex-vercel-template-demo.previews.convex.dev%2F&products=%5B%7B%22type%22%3A%22integration%22%2C%22integrationSlug%22%3A%22convex%22%2C%22productSlug%22%3A%22convex%22%2C%22protocol%22%3A%22storage%22%7D%5D)
 
 ## Learn more
 
