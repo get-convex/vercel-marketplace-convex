@@ -15,25 +15,33 @@ export default function Home() {
             <Image src="/convex.svg" alt="Convex Logo" width={32} height={32} />
             <div className="w-px h-8 bg-slate-300 dark:bg-slate-600"></div>
             <Image
-              src="/nextjs-icon-light-background.svg"
-              alt="Next.js Logo"
+              src="/vercel-icon-light.svg"
+              alt="Vercel Logo"
               width={32}
               height={32}
               className="dark:hidden"
             />
             <Image
-              src="/nextjs-icon-dark-background.svg"
-              alt="Next.js Logo"
+              src="/vercel-icon-dark.svg"
+              alt="Vercel Logo"
               width={32}
               height={32}
               className="hidden dark:block"
             />
           </div>
           <h1 className="font-semibold text-slate-800 dark:text-slate-200">
-            Convex + Next.js
+            Convex + Vercel
           </h1>
         </div>
-        <AuthPopoverButton />
+        <div className="flex gap-2 items-center">
+          <a
+            href={`https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fget-convex%2Fvercel-marketplace-convex&project-name=vercel-with-convex&repository-name=vercel-with-convex&demo-title=Convex%20with%20Vercel&demo-description=A%20minimal%20template%20showcasing%20using%20Convex%20with%20Vercel&demo-url=https%3A%2F%2Fconvex-vercel-template-demo.previews.convex.dev%2F&products=%5B%7B%22type%22%3A%22integration%22%2C%22integrationSlug%22%3A%22convex%22%2C%22productSlug%22%3A%22convex%22%2C%22protocol%22%3A%22storage%22%7D%5D`}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element*/}
+            <img src="https://vercel.com/button" alt="Deploy with Vercel" />
+          </a>
+          <AuthPopoverButton />
+        </div>
       </header>
       <main className="p-8 flex flex-col gap-8">
         <Content />
@@ -76,7 +84,8 @@ function Content() {
         </h2>
         <p className="text-slate-600 dark:text-slate-400 mt-2">
           This demo app generates random numbers and stores them in your Convex
-          database.
+          database. This demo can be easily deployed to Vercel using the Vercel
+          Marketplace.
         </p>
       </div>
 
@@ -249,7 +258,7 @@ function AuthPopoverButton() {
     <div className="relative" ref={popoverRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="bg-green-600 hover:bg-green-700 dark:bg-green-600 dark:hover:bg-green-500 text-white text-sm font-medium px-4 py-2 rounded-lg cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md"
+        className="bg-green-600 dark:bg-green-600 dark:hover:bg-green-500 text-white text-sm font-medium px-3 py-1.5 rounded-md cursor-pointer transition-all duration-200"
       >
         Want Auth?
       </button>
